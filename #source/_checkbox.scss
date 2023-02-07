@@ -1,0 +1,37 @@
+
+.custom-checkbox > input[type="checkbox"] {
+    position: absolute; 
+    z-index: -1;
+    width:0; 
+    height:0;
+    opacity: 0;
+}
+
+.custom-checkbox {
+    width: 100%;
+}
+
+.custom-checkbox > span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.checkbox-span {
+    color: transparent;
+    background-color: transparent;
+}
+
+.custom-checkbox > input:checked + .checkbox-span {
+    content: "\2713";
+    color: black;
+    text-decoration: transparent;
+}
+
+.custom-checkbox > input:checked ~ span {
+    text-decoration: line-through;
+}
+
+.custom-checkbox > input:checked {
+    background-color: blue;
+}

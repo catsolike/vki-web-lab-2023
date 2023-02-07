@@ -2,31 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>1 HTML</title>
 </head>
 <body>
-    <h1>Список дел</h1>
-    <input type="text"
-           placeholder="Новый элемент списка"
-           >
-    <button>Создать</button>
-
-    <ol>
-        <li>
-            <input type="checkbox">
-            <span>Почесать кошку</span>
-            <button>&times;</button>
-        </li>
-        <li>
-            <input type="checkbox">
-            <span>Выгулять картошку</span>
-            <button>&times;</button>
-        </li>
-        <li>
-            <input type="checkbox">
-            <span>Сложить в лукошко</span>
-            <button>&times;</button>
-        </li>
-    </ol>
+    <div class="main">
+        <div class="input-form">
+            <h1><p>Список дел</p></h1>
+            <!-- если нажать на Enter после input, то между input и button будет пробел, даже если width, padding и border равны 0 -->
+            <input type="text"
+                   placeholder="Введите новое дело..."
+                   ><button class="save-btn">Сохранить</button>
+        </div>
+        
+        <ul>
+            <li>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-span">&check;</span><span>Почесать кошку</span>
+                </label>
+                <button class="delete-btn">&cross;</button>
+            </li>
+            <li>
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox-span">&check;</span><span>Выгулять картошку</span>
+                </label>
+                <button class="delete-btn">&cross;</button>
+            </li>
+            <li>
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox-span">&check;</span><span>Написать сайт</span>
+                </label>
+                <button class="delete-btn">&cross;</button>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>

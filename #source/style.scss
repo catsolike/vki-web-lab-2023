@@ -1,0 +1,53 @@
+@import "fonts.scss";
+@import "nullstyle.scss";
+@import "checkbox.scss";
+
+.main {
+    margin: 0 auto;
+    width: max-content;
+    height: 100%;
+    font-family: 'Inter';
+}
+
+h1 > p {
+    text-align: center;
+    color: white;
+}
+
+.input-form {
+    padding: 10px;
+    background-color: rgb(47, 79, 79);
+}
+
+.save-btn {
+    padding: 0 5px 0 5px;
+}
+
+// input{
+//     margin: 0 0 0 0;
+//     padding: 0 0 0 0;
+//     width: auto;
+// }
+// button{
+//     margin: 0 0 0 0;
+//     padding: 0 0 0 0;
+//     width: auto;
+// }
+
+ol:first-child{
+    background-color: rgb(136,136,136);
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(249,249,249);
+}
+
+li:hover {
+    background-color: rgb(238,238,238);
+}
+
+.delete-btn{
+    background-color: transparent;
+    padding: 2px;
+}
